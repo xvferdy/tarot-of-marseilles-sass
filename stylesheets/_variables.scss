@@ -1,0 +1,13 @@
+$primary-color: #8675a9;
+$secondary-color: #efbbcf;
+$third-color: #c3aed6;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+$font-weights: (
+	"regular": 400,
+	"medium": 500,
+	"bold": 700,
+);
+
+$primary-font: "Poppins", sans-serif;

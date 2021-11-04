@@ -1,3 +1,82 @@
+@import "reset";
+@import "variables";
+@import "grid-layout";
+@import "animations";
+
+@mixin flexbox {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	// line-height: 70px;
+}
+
+// nav
+nav {
+	@include flexbox();
+	color: $primary-color;
+	background: $secondary-color;
+	position: sticky;
+	top: 0;
+	z-index: 2;
+
+	.brand {
+		margin-left: 20px;
+		cursor: pointer;
+	}
+
+	.nav-lists {
+		@include flexbox();
+		list-style: none;
+		width: 32vw;
+		// width: 500px;
+
+		.nav-items {
+			a {
+				color: $primary-color;
+				text-decoration: none;
+				font-weight: map-get($font-weights, regular);
+				position: relative;
+			}
+		}
+	}
+
+	.account {
+		@include flexbox();
+		margin-right: 20px;
+		width: 150px;
+		.log-in {
+			cursor: pointer;
+			position: relative;
+		}
+		.sign-up {
+			border: 2px solid $primary-color;
+			border-radius: 15px;
+			padding: 0.3em 0.6em;
+			// transition: all 0.3s linear;
+			cursor: pointer;
+
+			&:hover {
+				background-color: $secondary-color;
+				color: $primary-color;
+			}
+		}
+	}
+
+	//nav:hover
+	&:hover {
+		background-color: $primary-color;
+		color: $secondary-color;
+
+		.nav-items a {
+			color: $secondary-color;
+			border-color: palegreen;
+		}
+		.sign-up {
+			border-color: $secondary-color;
+		}
+	}
+}
+
 .video {
 	background-color: burlywood;
 }

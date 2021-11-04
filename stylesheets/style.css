@@ -1,3 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #efbbcf;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "nav nav nav nav" "hero hero hero hero" "video video video video" "showcase showcase showcase showcase" "download download download download" "footer footer footer footer";
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 70px minmax(100px, 80vh) minmax(500px, 700px) 3fr 50px minmax(100px, 20vh);
+      grid-template-rows: 70px minmax(100px, 80vh) minmax(500px, 700px) 3fr 50px minmax(100px, 20vh);
+}
+
+nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: nav;
+}
+
+.gero {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: hero;
+}
+
+.video {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: video;
+}
+
+.showcase {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: showcase;
+}
+
+.download {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: download;
+}
+
+footer {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: footer;
+}
+
+a::after, .log-in::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  background-color: #efbbcf;
+  bottom: 0;
+  left: 0;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+a:hover::after, .log-in:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #8675a9;
+  background: #efbbcf;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+nav .brand {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+nav .nav-lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  width: 32vw;
+}
+
+nav .nav-lists .nav-items a {
+  color: #8675a9;
+  text-decoration: none;
+  font-weight: 400;
+  position: relative;
+}
+
+nav .account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+  width: 150px;
+}
+
+nav .account .log-in {
+  cursor: pointer;
+  position: relative;
+}
+
+nav .account .sign-up {
+  border: 2px solid #8675a9;
+  border-radius: 15px;
+  padding: 0.3em 0.6em;
+  cursor: pointer;
+}
+
+nav .account .sign-up:hover {
+  background-color: #efbbcf;
+  color: #8675a9;
+}
+
+nav:hover {
+  background-color: #8675a9;
+  color: #efbbcf;
+}
+
+nav:hover .nav-items a {
+  color: #efbbcf;
+  border-color: palegreen;
+}
+
+nav:hover .sign-up {
+  border-color: #efbbcf;
+}
+
 .video {
   background-color: burlywood;
 }

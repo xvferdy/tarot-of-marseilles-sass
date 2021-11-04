@@ -1,0 +1,34 @@
+.grid-container {
+	display: grid;
+	grid-template-areas:
+		"nav nav nav nav"
+		"hero hero hero hero"
+		"video video video video"
+		"showcase showcase showcase showcase"
+		"download download download download"
+		"footer footer footer footer";
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 70px minmax(100px, 80vh) minmax(500px, 700px) 3fr 50px minmax(
+			100px,
+			20vh
+		);
+}
+
+nav {
+	grid-area: nav;
+}
+.gero {
+	grid-area: hero;
+}
+.video {
+	grid-area: video;
+}
+.showcase {
+	grid-area: showcase;
+}
+.download {
+	grid-area: download;
+}
+footer {
+	grid-area: footer;
+}
