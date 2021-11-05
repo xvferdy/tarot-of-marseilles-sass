@@ -8,7 +8,7 @@
 		"download download download download"
 		"footer footer footer footer";
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 70px minmax(100px, 80vh) minmax(500px, 700px) 3fr 50px minmax(
+	grid-template-rows: 70px minmax(100px, 100vh) minmax(500px, 700px) 3fr 80px minmax(
 			100px,
 			20vh
 		);
@@ -17,18 +17,23 @@
 nav {
 	grid-area: nav;
 }
-.gero {
+
+.hero {
 	grid-area: hero;
 }
+
 .video {
 	grid-area: video;
 }
+
 .showcase {
 	grid-area: showcase;
 }
+
 .download {
 	grid-area: download;
 }
+
 footer {
 	grid-area: footer;
 }

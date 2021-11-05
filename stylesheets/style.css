@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +10,7 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -21,8 +23,8 @@ body {
       grid-template-areas: "nav nav nav nav" "hero hero hero hero" "video video video video" "showcase showcase showcase showcase" "download download download download" "footer footer footer footer";
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: 70px minmax(100px, 80vh) minmax(500px, 700px) 3fr 50px minmax(100px, 20vh);
-      grid-template-rows: 70px minmax(100px, 80vh) minmax(500px, 700px) 3fr 50px minmax(100px, 20vh);
+  -ms-grid-rows: 70px minmax(100px, 100vh) minmax(500px, 700px) 3fr 80px minmax(100px, 20vh);
+      grid-template-rows: 70px minmax(100px, 100vh) minmax(500px, 700px) 3fr 80px minmax(100px, 20vh);
 }
 
 nav {
@@ -32,7 +34,7 @@ nav {
   grid-area: nav;
 }
 
-.gero {
+.hero {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
@@ -90,6 +92,183 @@ a:hover::after, .log-in:hover::after {
           transform: scaleX(1);
 }
 
+.showcase-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url("../assets/pic10.jpg");
+  background-blend-mode: screen;
+  background-size: cover;
+  opacity: 0;
+  -webkit-transition: opacity 1.3s;
+  transition: opacity 1.3s;
+}
+
+.showcase-item:hover::after {
+  content: "";
+  opacity: 1;
+  width: 100%;
+  height: 50%;
+}
+
+.showcase {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-auto-rows: auto;
+  gap: 20px;
+  place-items: center;
+}
+
+.showcase .showcase-item {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: relative;
+  color: white;
+  cursor: pointer;
+  width: 400px;
+  height: 500px;
+}
+
+.showcase .showcase-item .title {
+  position: absolute;
+  top: 10px;
+  font-weight: 500;
+}
+
+.showcase .showcase-item .showcase-h1 {
+  text-align: center;
+}
+
+.showcase .showcase-item .hover-h1 {
+  display: none;
+  text-align: center;
+}
+
+.showcase .showcase-item:hover .showcase-h1 {
+  display: none;
+}
+
+.showcase .showcase-item:hover .hover-h1 {
+  position: absolute;
+  bottom: 20px;
+  display: block;
+}
+
+.showcase .item1 {
+  background-image: url("../assets/pic1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.showcase .item1:hover {
+  background-image: none;
+  background-color: black;
+}
+
+.showcase .item2 {
+  background-color: #7cb9e2;
+}
+
+.showcase .item2:hover {
+  background-color: coral;
+}
+
+.showcase .item3 {
+  background-image: url("../assets/pic2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.showcase .item3:hover {
+  background-image: none;
+  background-color: #7ce2d5;
+}
+
+.showcase .item4 {
+  background-color: #f0b568;
+}
+
+.showcase .item4:hover {
+  color: #4e77ad;
+}
+
+.showcase .item5 {
+  background-color: #6abe9e;
+}
+
+.showcase .item5:hover {
+  color: #1d525c;
+}
+
+.showcase .item6 {
+  background-image: url("../assets/pic3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.showcase .item6:hover {
+  background-image: none;
+  background-color: #8b7ce2;
+}
+
+.showcase .item7 {
+  background-color: #faaf6a;
+}
+
+.showcase .item7:hover {
+  color: #49466d;
+}
+
+.showcase .item8 {
+  background-image: url("../assets/pic6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.showcase .item8:hover {
+  background-image: none;
+  background-color: #d166d1;
+}
+
+.showcase .item9 {
+  background-image: url("../assets/pic4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.showcase .item9:hover {
+  background-image: none;
+  background-color: #7367bb;
+}
+
+.showcase .item10 {
+  background-color: #48315c;
+}
+
+.showcase .item10:hover {
+  color: #d6428c;
+}
+
+/* SASS DIRECTORY
+	1. =NAV
+	2. =HERO
+	3. =VIDEO
+	4. =SHOWCASE
+	5. =DOWNLOAD
+	6. =FOOTER
+*/
+/* ===NAV=== */
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,7 +303,8 @@ nav .nav-lists {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
-  width: 32vw;
+  width: 500px;
+  margin-left: 49px;
 }
 
 nav .nav-lists .nav-items a {
@@ -172,14 +352,94 @@ nav:hover {
 
 nav:hover .nav-items a {
   color: #efbbcf;
-  border-color: palegreen;
 }
 
 nav:hover .sign-up {
   border-color: #efbbcf;
 }
 
+/* ===HERO=== */
+.hero {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: #8675a9;
+}
+
+.hero .hero-content {
+  text-align: center;
+  max-width: 900px;
+}
+
+.hero .hero-content .hero-title {
+  margin: 20px;
+  font-size: 3rem;
+}
+
+.hero .hero-content .hero-sub-title {
+  margin: 20px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.hero .hero-content .cta {
+  margin: 20px;
+}
+
+.hero .hero-content .cta a {
+  color: #8675a9;
+}
+
+/* ===VIDEO=== */
 .video {
-  background-color: burlywood;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.video video {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+}
+
+.video .video-text {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.video .video-text .video-sub-title {
+  font-size: 1.5rem;
+}
+
+.video .video-text .video-title {
+  font-size: 3rem;
+}
+
+/* ===SHOWCASE=== */
+/* =================
+   showcase partials
+   ================= */
+/* ===DOWNLOAD=== */
+.download .cta-dl {
+  border: 2px solid #8675a9;
+  border-radius: 15px;
+  padding: 0.3em 0.6em;
+  cursor: pointer;
+  color: #8675a9;
+  margin: 20px auto;
+  text-align: center;
+  width: 200px;
+}
+
+.download .cta-dl:hover {
+  background-color: #8675a9;
+  color: #efbbcf;
+  border-color: #efbbcf;
+}
+
+/* ===FOOTER=== */
+footer {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

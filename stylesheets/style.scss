@@ -2,15 +2,31 @@
 @import "variables";
 @import "grid-layout";
 @import "animations";
+@import "showcase";
 
 @mixin flexbox {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	// line-height: 70px;
+}
+@mixin cta {
+	border: 2px solid $primary-color;
+	border-radius: 15px;
+	padding: 0.3em 0.6em;
+	// transition: all 0.3s linear;
+	cursor: pointer;
 }
 
-// nav
+/* SASS DIRECTORY
+	1. =NAV
+	2. =HERO
+	3. =VIDEO
+	4. =SHOWCASE
+	5. =DOWNLOAD
+	6. =FOOTER
+*/
+
+/* ===NAV=== */
 nav {
 	@include flexbox();
 	color: $primary-color;
@@ -18,18 +34,15 @@ nav {
 	position: sticky;
 	top: 0;
 	z-index: 2;
-
 	.brand {
 		margin-left: 20px;
 		cursor: pointer;
 	}
-
 	.nav-lists {
 		@include flexbox();
 		list-style: none;
-		width: 32vw;
-		// width: 500px;
-
+		width: 500px;
+		margin-left: 49px; //mata
 		.nav-items {
 			a {
 				color: $primary-color;
@@ -39,7 +52,6 @@ nav {
 			}
 		}
 	}
-
 	.account {
 		@include flexbox();
 		margin-right: 20px;
@@ -49,27 +61,19 @@ nav {
 			position: relative;
 		}
 		.sign-up {
-			border: 2px solid $primary-color;
-			border-radius: 15px;
-			padding: 0.3em 0.6em;
-			// transition: all 0.3s linear;
-			cursor: pointer;
-
+			@include cta();
 			&:hover {
 				background-color: $secondary-color;
 				color: $primary-color;
 			}
 		}
 	}
-
 	//nav:hover
 	&:hover {
 		background-color: $primary-color;
 		color: $secondary-color;
-
 		.nav-items a {
 			color: $secondary-color;
-			border-color: palegreen;
 		}
 		.sign-up {
 			border-color: $secondary-color;
@@ -77,6 +81,77 @@ nav {
 	}
 }
 
+/* ===HERO=== */
+.hero {
+	display: grid;
+	place-items: center;
+	color: $primary-color;
+	.hero-content {
+		text-align: center;
+		max-width: 900px;
+
+		.hero-title {
+			margin: 20px;
+			font-size: 3rem;
+		}
+		.hero-sub-title {
+			margin: 20px;
+			font-size: 2rem;
+			font-weight: map-get($font-weights, medium);
+		}
+		.cta {
+			margin: 20px;
+			a {
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+/* ===VIDEO=== */
 .video {
-	background-color: burlywood;
+	display: grid;
+	place-items: center;
+	video {
+		width: 100%;
+		max-width: 900px;
+		height: auto;
+	}
+	.video-text {
+		padding: 1rem 0;
+		text-align: center;
+
+		.video-sub-title {
+			font-size: 1.5rem;
+		}
+		.video-title {
+			font-size: 3rem;
+		}
+	}
+}
+
+/* ===SHOWCASE=== */
+/* =================
+   showcase partials
+   ================= */
+
+/* ===DOWNLOAD=== */
+.download {
+	.cta-dl {
+		@include cta();
+		color: $primary-color;
+		margin: 20px auto;
+		text-align: center;
+		width: 200px;
+		&:hover {
+			background-color: $primary-color;
+			color: $secondary-color;
+			border-color: $secondary-color;
+		}
+	}
+}
+
+/* ===FOOTER=== */
+footer {
+	text-align: center;
 }
