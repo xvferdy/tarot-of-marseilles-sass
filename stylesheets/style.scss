@@ -34,6 +34,7 @@ nav {
 	position: sticky;
 	top: 0;
 	z-index: 2;
+
 	.brand {
 		margin-left: 20px;
 		cursor: pointer;
@@ -154,4 +155,62 @@ nav {
 /* ===FOOTER=== */
 footer {
 	text-align: center;
+}
+
+//hapu mobile
+/* Sembunyikan hamburger icon */
+
+label,
+#hamburger {
+	display: none;
+}
+@media screen and (max-width: 810px) {
+	nav {
+		background-color: rebeccapurple;
+		label {
+			display: inline-block;
+			color: white;
+			font-style: normal;
+			font-size: 2rem;
+			padding: 0.5rem;
+			padding-left: 1rem;
+		}
+		.brand {
+			display: none;
+		}
+
+		.nav-lists {
+			flex-direction: column;
+			margin-left: 0;
+			// justify-content: flex-start;
+
+			width: 100%;
+			position: absolute;
+			top: 60px;
+			left: 0;
+			background-color: rebeccapurple;
+
+			//other
+			align-items: flex-start;
+			text-transform: uppercase;
+			height: auto;
+			padding: 0 1em;
+
+			.nav-items {
+				display: none;
+				a {
+					color: bisque;
+				}
+			}
+		}
+		&:hover {
+			background-color: rebeccapurple;
+		}
+	}
+
+	#hamburger:checked ~ ul.nav-lists li {
+		display: flex;
+		// color: aqua;
+		// background-color: bisque;
+	}
 }

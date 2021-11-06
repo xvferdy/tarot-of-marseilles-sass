@@ -7,6 +7,7 @@
 		"showcase showcase showcase showcase"
 		"download download download download"
 		"footer footer footer footer";
+
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: 70px minmax(100px, 100vh) minmax(500px, 700px) 3fr 80px minmax(
 			100px,
