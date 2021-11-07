@@ -124,7 +124,6 @@ nav a:hover::after, nav .log-in:hover::after {
       grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
   grid-auto-rows: auto;
   gap: 30px;
-  padding: 0 5px;
   place-items: center;
 }
 
@@ -1267,6 +1266,7 @@ nav:hover .sign-up {
   display: grid;
   place-items: center;
   color: #2b3838;
+  line-height: 30px;
 }
 
 .hero .hero-content {
@@ -1335,6 +1335,10 @@ nav:hover .sign-up {
 /* ===DOWNLOAD=== */
 .download {
   padding-top: 20px;
+}
+
+.download a {
+  text-decoration: none;
 }
 
 .download .cta-dl {
