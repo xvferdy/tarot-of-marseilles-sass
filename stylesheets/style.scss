@@ -4,7 +4,7 @@
 @import "animations";
 @import "showcase";
 
-@mixin flexbox {
+@mixin flexbox() {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -13,7 +13,6 @@
 	border: 2px solid $primary-color;
 	border-radius: 15px;
 	padding: 0.3em 0.6em;
-	// transition: all 0.3s linear;
 	cursor: pointer;
 }
 
@@ -24,6 +23,7 @@
 	4. =SHOWCASE
 	5. =DOWNLOAD
 	6. =FOOTER
+	7. =MEDIA-QUERY
 */
 
 /* ===NAV=== */
@@ -34,7 +34,7 @@ nav {
 	position: sticky;
 	top: 0;
 	z-index: 2;
-
+	border-bottom: 1px dotted transparent;
 	.brand {
 		margin-left: 20px;
 		cursor: pointer;
@@ -71,7 +71,7 @@ nav {
 	}
 	//nav:hover
 	&:hover {
-		background-color: $primary-color;
+		background-color: $primary-color !important;
 		color: $secondary-color;
 		.nav-items a {
 			color: $secondary-color;
@@ -157,19 +157,18 @@ footer {
 	text-align: center;
 }
 
-//hapu mobile
-/* Sembunyikan hamburger icon */
-
+/* ===MEDIA-QUERY=== */
 label,
 #hamburger {
 	display: none;
+	cursor: pointer;
 }
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 860px) {
 	nav {
-		background-color: rebeccapurple;
+		background-color: #142141 !important;
+		color: $secondary-color;
 		label {
 			display: inline-block;
-			color: white;
 			font-style: normal;
 			font-size: 2rem;
 			padding: 0.5rem;
@@ -178,19 +177,15 @@ label,
 		.brand {
 			display: none;
 		}
-
 		.nav-lists {
 			flex-direction: column;
 			margin-left: 0;
-			// justify-content: flex-start;
-
+			margin-top: 10px;
 			width: 100%;
 			position: absolute;
-			top: 60px;
+			top: 45px;
 			left: 0;
-			background-color: rebeccapurple;
-
-			//other
+			background-color: #142141;
 			align-items: flex-start;
 			text-transform: uppercase;
 			height: auto;
@@ -199,18 +194,20 @@ label,
 			.nav-items {
 				display: none;
 				a {
-					color: bisque;
+					color: $secondary-color;
+					margin: 10px 0;
 				}
 			}
 		}
 		&:hover {
-			background-color: rebeccapurple;
+			background-color: #142141 !important;
 		}
 	}
-
 	#hamburger:checked ~ ul.nav-lists li {
 		display: flex;
-		// color: aqua;
-		// background-color: bisque;
+	}
+
+	.video-title {
+		font-size: 2.3rem !important;
 	}
 }
