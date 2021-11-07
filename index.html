@@ -4,19 +4,27 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="./stylesheets/style.css" />
-		<title>Award.me</title>
+		<title>Tarot Cards</title>
 	</head>
 	<body>
 		<div class="grid-container">
+			<!-- NAV-START -->
 			<nav>
-				<h3 class="brand">Award.me</h3>
+				<label for="hamburger">&#9776;</label>
+				<input type="checkbox" id="hamburger" />
+				<h3 class="brand">タロット Tarotto</h3>
 				<ul class="nav-lists" id="menu">
-					<li class="nav-items"><a class="link" href="#">Award.me</a></li>
+					<li class="nav-items">
+						<a class="link" href="#members">Award.me</a>
+					</li>
 					<li class="nav-items"><a class="link" href="#">Make it Now</a></li>
 					<li class="nav-items"><a class="link" href="#">Yummy Gum</a></li>
 					<li class="nav-items"><a class="link" href="#">API</a></li>
-					<li class="nav-items"><a class="link" href="#">Advertise</a></li>
+					<li class="nav-items">
+						<a class="link" href="#footer">Advertise</a>
+					</li>
 				</ul>
 				<div class="account">
 					<h4 class="log-in">Log In</h4>
@@ -24,110 +32,182 @@
 				</div>
 			</nav>
 
-			<!-- mobile menu nav -->
-			<div class="mobile-menu">
-				<div class="burger">
-					<div class="line1"></div>
-					<div class="line2"></div>
-					<div class="line3"></div>
-				</div>
-
-				<ul>
-					<li class="nav-items"><a class="link" href="#">Award.me</a></li>
-					<li class="nav-items"><a class="link" href="#">Make it Now</a></li>
-					<li class="nav-items"><a class="link" href="#">Yummy Gum</a></li>
-					<li class="nav-items"><a class="link" href="#">API</a></li>
-					<li class="nav-items"><a class="link" href="#">Advertise</a></li>
-				</ul>
-			</div>
-			<!-- mobile menu nav -->
-
+			<!-- HERO-START -->
 			<div class="hero">
 				<div class="hero-content">
-					<h1 class="hero-title">Award.me for the Win</h1>
-					<p class="hero-sub-title">Your Dream your choice, see it here.</p>
+					<div style="color: red">CLOSE</div>
+					<h1 class="hero-title">Tarotto</h1>
+					<p class="hero-sub-title">Symbolism of Stand abilities</p>
 					<p>
-						It's great if we can make a champion for the anime category, it will
-						be very memorable because that's what we watched that year too.
-						Besides that you can express your "taste" to the world. minna^^ What
-						are you waiting for let's join now. ~uwu
+						The tarot cards in Stardust Crusaders each have their own designs
+						and symbolism which may relate to the Stand abilities. They were all
+						designed by Hirohiko Araki, appearing similarly to real tarot cards
+						but in Araki's own style. Muhammad Avdol first mentions the tarot
+						cards to Jotaro Kujo so that he can determine Jotaro's destiny and
+						name his Stand after Jotaro draws a card. The tarot cards have been
+						sold as merchandise in Adventure Battle Card. They were also
+						included with DVDs for the Stardust Crusaders OVA and as a limited
+						edition bonus in the Volume 2 Blu-Ray of Stardust Crusaders - Battle
+						in Egypt.
 					</p>
-					<p class="cta"><a href="#">Read for more details</a></p>
+					<p class="cta">
+						<a href="https://jojowiki.com/Tarot_Cards" target="_blank"
+							>Read for more details</a
+						>
+					</p>
+					<img class="dog" src="./assets/0u.png" />
 				</div>
 			</div>
-			<div class="video">
+
+			<!-- VIDEO-START -->
+			<div class="video" id="members">
 				<!-- <video width="840" height="512" autoplay loop muted>
-					<source src="./assets/video1.mp4" type="video/mp4" />
+					<source src="./assets/video2.mp4" type="video/mp4" />
 				</video> -->
+
 				<img
-					src="./assets/video3.gif"
+					src="./assets/video5.gif"
 					width="840"
 					height="512"
 					alt="404 image"
 				/>
+
 				<div class="video-text">
-					<p class="video-sub-title">Winner of 2021 by</p>
-					<p class="video-title">Award.me Category</p>
+					<p class="video-sub-title">
+						A list of Stand users whose Stands are based on the Major Arcana set
+						of tarot cards.
+					</p>
+					<p class="video-title">The Members</p>
 				</div>
 			</div>
+
+			<!-- SHOWCASE-START -->
 			<div class="showcase">
 				<div class="showcase-item item1">
-					<p class="title">Anime of the Year</p>
-					<h1 class="showcase-h1">Well known one</h1>
-					<h1 class="hover-h1">Great Pretender — Wit Studio</h1>
+					<p class="title">0</p>
+					<h1 class="showcase-h1">Innocence and spontaneity</h1>
+					<h1 class="hover-h1">Iggy</h1>
 				</div>
 				<div class="showcase-item item2">
-					<p class="title">Best Protagonist</p>
-					<h1 class="showcase-h1">I like it!</h1>
-					<h1 class="hover-h1">Natsume — Deca-Dence</h1>
+					<p class="title">1 (I)</p>
+					<h1 class="showcase-h1">New beginnings</h1>
+					<h1 class="hover-h1">Muhammad Avdol</h1>
 				</div>
 				<div class="showcase-item item3">
-					<p class="title">Best Antagonist</p>
-					<h1 class="showcase-h1">Dude or Gal</h1>
-					<h1 class="hover-h1">En — Dorohedoro</h1>
+					<p class="title">2 (II)</p>
+					<h1 class="showcase-h1">Intuition and arcane knowledge</h1>
+					<h1 class="hover-h1">Midler</h1>
 				</div>
 				<div class="showcase-item item4">
-					<p class="title">Best Boy</p>
-					<h1 class="showcase-h1">Animal boy?</h1>
-					<h1 class="hover-h1">Legoshi — Beastars</h1>
+					<p class="title">3 (III)</p>
+					<h1 class="showcase-h1">Growth of new life</h1>
+					<h1 class="hover-h1">Nena</h1>
 				</div>
 				<div class="showcase-item item5">
-					<p class="title">Best Girl</p>
-					<h1 class="showcase-h1">Don't pretend you don't like her</h1>
-					<h1 class="hover-h1">Abigail Jones — Great Pretender</h1>
+					<p class="title">4 (IV)</p>
+					<h1 class="showcase-h1">Order and control</h1>
+					<h1 class="hover-h1">Hol Horse</h1>
 				</div>
 				<div class="showcase-item item6">
-					<p class="title">Best Animation</p>
-					<h1 class="showcase-h1">New era is here</h1>
-					<h1 class="hover-h1">Keep Your Hands Off Eizouken! — Science SARU</h1>
+					<p class="title">5 (V)</p>
+					<h1 class="showcase-h1">Tradition and conformity</h1>
+					<h1 class="hover-h1">Noriaki Kakyoin</h1>
 				</div>
 				<div class="showcase-item item7">
-					<p class="title">Best Character Design</p>
-					<h1 class="showcase-h1">Unique</h1>
-					<h1 class="hover-h1">
-						Mayuka Itou, original designs by Iro Aida — Toilet-Bound Hanako-kun
-					</h1>
+					<p class="title">6 (VI)</p>
+					<h1 class="showcase-h1">Conscious connections and bonds</h1>
+					<h1 class="hover-h1">Steely Dan</h1>
 				</div>
 				<div class="showcase-item item8">
-					<p class="title">Best Director</p>
-					<h1 class="showcase-h1">Ty for the meal</h1>
-					<h1 class="hover-h1">Masaaki Yuasa — Devilman Crybaby</h1>
+					<p class="title">7 (VII)</p>
+					<h1 class="showcase-h1">Invasion and victory</h1>
+					<h1 class="hover-h1">Jean Pierre Polnareff</h1>
 				</div>
 				<div class="showcase-item item9">
-					<p class="title">Best Film</p>
-					<h1 class="showcase-h1">Movie movie movie</h1>
-					<h1 class="hover-h1">My Hero Academia: Two Heroes — Bones</h1>
+					<p class="title">8 (VIII)</p>
+					<h1 class="showcase-h1">Resilience, compassion, and confidence</h1>
+					<h1 class="hover-h1">Forever</h1>
 				</div>
 				<div class="showcase-item item10">
-					<p class="title">Best Continuing Series</p>
-					<h1>We're going to the moon</h1>
-					<h1 class="hover-h1">Dragon Ball Super — Toei Animation</h1>
+					<p class="title">9 (IX)</p>
+					<h1 class="showcase-h1">Introspection and contemplation</h1>
+					<h1 class="hover-h1">Joseph Joestar</h1>
+				</div>
+				<div class="showcase-item item11">
+					<p class="title">10 (X)</p>
+					<h1 class="showcase-h1">Change and unpredictability</h1>
+					<h1 class="hover-h1">ZZ</h1>
+				</div>
+				<div class="showcase-item item12">
+					<p class="title">11 (XI)</p>
+					<h1 class="showcase-h1">Fairness and consequences</h1>
+					<h1 class="hover-h1">Enya the Hag</h1>
+				</div>
+				<div class="showcase-item item13">
+					<p class="title">12 (XII)</p>
+					<h1 class="showcase-h1">Different perspectives</h1>
+					<h1 class="hover-h1">J. Geil</h1>
+				</div>
+				<div class="showcase-item item14">
+					<p class="title">13 (XIII)</p>
+					<h1 class="showcase-h1">Self-awareness and transformation</h1>
+					<h1 class="hover-h1">Mannish Boy</h1>
+				</div>
+				<div class="showcase-item item15">
+					<p class="title">14 (XIV)</p>
+					<h1 class="showcase-h1">Balance and moderation</h1>
+					<h1 class="hover-h1">Rubber Soul</h1>
+				</div>
+				<div class="showcase-item item16">
+					<p class="title">15 (XV)</p>
+					<h1 class="showcase-h1">Confusion and misfortune</h1>
+					<h1 class="hover-h1">Devo the Cursed</h1>
+				</div>
+				<div class="showcase-item item17">
+					<p class="title">16 (XVI)</p>
+					<h1 class="showcase-h1">
+						Unexpected interruption of a journey and chaos
+					</h1>
+					<h1 class="hover-h1">Gray Fly</h1>
+				</div>
+				<div class="showcase-item item18">
+					<p class="title">17 (XVII)</p>
+					<h1 class="showcase-h1">Optimism, discernment, and hope</h1>
+					<h1 class="hover-h1">Jotaro Kujo</h1>
+				</div>
+				<div class="showcase-item item19">
+					<p class="title">18 (XVIII)</p>
+					<h1 class="showcase-h1">
+						Trouble in water, lies, betrayal, and fear of the unknown
+					</h1>
+					<h1 class="hover-h1">Impostor Captain Tennille</h1>
+				</div>
+				<div class="showcase-item item20">
+					<p class="title">19 (XIX)</p>
+					<h1 class="showcase-h1">Abundance, happiness, and fun</h1>
+					<h1 class="hover-h1">Arabia Fats</h1>
+				</div>
+				<div class="showcase-item item21">
+					<p class="title">20 (XX)</p>
+					<h1 class="showcase-h1">Rebirth and self-reflection</h1>
+					<h1 class="hover-h1">Cameo</h1>
+				</div>
+				<div class="showcase-item item22">
+					<p class="title">21 (XXI)</p>
+					<h1 class="showcase-h1">
+						Achievement and a pause in life before the next cycle
+					</h1>
+					<h1 class="hover-h1">DIO</h1>
 				</div>
 			</div>
+
+			<!-- SOWNLOAD-START -->
 			<div class="download">
-				<h4 class="cta-dl">Download PDF</h4>
+				<a href="#"> <h4 class="cta-dl">Download PDF</h4></a>
 			</div>
-			<footer>
+
+			<!-- FOOTER-START -->
+			<footer id="footer">
 				<p>
 					*Award.me it's me. Download for more details about nominations ect.
 					Copyright right release 2021

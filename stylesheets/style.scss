@@ -1,3 +1,248 @@
+@import "reset";
+@import "variables";
+@import "grid-layout";
+@import "animations";
+@import "showcase";
+
+@mixin flexbox() {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+@mixin cta {
+	border: 2px solid $primary-color;
+	border-radius: 15px;
+	padding: 0.3em 0.6em;
+	cursor: pointer;
+}
+
+/* SASS DIRECTORY
+	1. =NAV
+	2. =HERO
+	3. =VIDEO
+	4. =SHOWCASE
+	5. =DOWNLOAD
+	6. =FOOTER
+	7. =MEDIA-QUERY
+*/
+
+/* ===NAV=== */
+nav {
+	@include flexbox();
+	color: $primary-color;
+	background: $secondary-color;
+	position: sticky;
+	top: 0;
+	z-index: 3;
+	border-bottom: 1px dotted transparent;
+	.brand {
+		margin-left: 20px;
+		cursor: pointer;
+	}
+	.nav-lists {
+		@include flexbox();
+		list-style: none;
+		width: 500px;
+
+		.nav-items {
+			a {
+				color: $primary-color;
+				text-decoration: none;
+				font-weight: map-get($font-weights, regular);
+				position: relative;
+			}
+		}
+	}
+	.account {
+		@include flexbox();
+		margin-right: 20px;
+		width: 150px;
+		.log-in {
+			cursor: pointer;
+			position: relative;
+		}
+		.sign-up {
+			@include cta();
+			&:hover {
+				background-color: $secondary-color;
+				color: $primary-color;
+			}
+		}
+	}
+	//nav:hover
+	&:hover {
+		background-color: $primary-color !important;
+		color: $secondary-color;
+		.nav-items a {
+			color: $secondary-color;
+		}
+		.sign-up {
+			border-color: $secondary-color;
+		}
+	}
+}
+
+/* ===HERO=== */
+.hero {
+	display: grid;
+	place-items: center;
+	color: $primary-color;
+	line-height: 30px;
+	.hero-content {
+		text-align: center;
+		max-width: 900px;
+
+		.hero-title {
+			margin: 20px;
+			font-size: 3rem;
+		}
+		.hero-sub-title {
+			margin: 20px;
+			font-size: 2rem;
+			font-weight: map-get($font-weights, medium);
+		}
+		.cta {
+			margin: 20px;
+			a {
+				color: $primary-color;
+			}
+		}
+		.dog {
+			position: absolute;
+			left: 5px;
+			width: 200px;
+			transform: scaleX(-1);
+		}
+	}
+}
+
+/* ===VIDEO=== */
 .video {
-	background-color: burlywood;
+	display: grid;
+	place-items: center;
+	// video {
+	// 	width: 100%;
+	// 	max-width: 900px;
+	// 	height: auto;
+	// }
+	img {
+		width: 100%;
+		max-width: 900px;
+		height: auto;
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+	}
+	.video-text {
+		// padding: 1rem 0;
+		text-align: center;
+
+		.video-sub-title {
+			font-size: 1.5rem;
+		}
+		.video-title {
+			font-size: 3rem;
+		}
+	}
+}
+
+/* ===SHOWCASE=== */
+/* =================
+   showcase partials
+   ================= */
+
+/* ===DOWNLOAD=== */
+.download {
+	a {
+		text-decoration: none;
+	}
+	padding-top: 20px;
+	.cta-dl {
+		@include cta();
+
+		color: $primary-color;
+		margin: 20px auto;
+		text-align: center;
+		width: 200px;
+		&:hover {
+			background-color: $primary-color;
+			color: $secondary-color;
+			border-color: $secondary-color;
+		}
+	}
+}
+
+/* ===FOOTER=== */
+footer {
+	display: flex;
+
+	justify-content: center;
+	align-items: flex-end;
+	padding: 1rem;
+	position: relative;
+	text-align: center;
+}
+
+/* ===MEDIA-QUERY=== */
+label,
+#hamburger {
+	display: none;
+	cursor: pointer;
+}
+@media screen and (max-width: 860px) {
+	// nav
+	nav {
+		background-color: #142141 !important;
+		color: $secondary-color;
+		label {
+			display: inline-block;
+			font-style: normal;
+			font-size: 2rem;
+			padding: 0.5rem;
+			padding-left: 1rem;
+		}
+		.brand {
+			display: none;
+		}
+		.nav-lists {
+			flex-direction: column;
+			margin-left: 0;
+			margin-top: 10px;
+			width: 100%;
+			position: absolute;
+			top: 45px;
+			left: 0;
+			background-color: #142141;
+			align-items: flex-start;
+			text-transform: uppercase;
+			height: auto;
+			padding: 0 1em;
+			.nav-items {
+				display: none;
+				a {
+					color: $secondary-color;
+					margin: 10px 0;
+				}
+			}
+		}
+		&:hover {
+			background-color: #142141 !important;
+		}
+	}
+	#hamburger:checked ~ ul.nav-lists li {
+		display: flex;
+	}
+
+	// video
+	.video-title {
+		font-size: 2.3rem !important;
+	}
+
+	// hero
+	.hero {
+		.hero-content {
+			.dog {
+				position: relative;
+				width: 50px;
+			}
+		}
+	}
 }

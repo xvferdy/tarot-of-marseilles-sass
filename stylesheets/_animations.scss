@@ -1,0 +1,49 @@
+@import "variables";
+
+// nav, mobile nav
+nav a::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1.5px;
+	background-color: $secondary-color;
+	bottom: 0;
+	left: 0;
+	transform-origin: left;
+	transition: transform 0.3s linear;
+	transform: scaleX(0);
+}
+
+nav a:hover::after {
+	transform: scaleX(1);
+}
+
+.log-in::after {
+	@extend a::after;
+}
+
+// card hover
+@mixin user($pict) {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url("../assets/" + $pict + ".png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0;
+	transition: opacity 0.3s linear;
+	border-radius: 25px;
+}
+
+@mixin userHover() {
+	content: "";
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+	opacity: 1;
+}
