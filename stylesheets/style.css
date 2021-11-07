@@ -11,10 +11,11 @@
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: #efbbcf;
+  background-color: #ffd24e;
   color: #142141;
 }
 
@@ -24,8 +25,8 @@ body {
       grid-template-areas: "nav nav nav nav" "hero hero hero hero" "video video video video" "showcase showcase showcase showcase" "download download download download" "footer footer footer footer";
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: 70px minmax(100px, 100vh) minmax(500px, 700px) 3fr 80px minmax(100px, 20vh);
-      grid-template-rows: 70px minmax(100px, 100vh) minmax(500px, 700px) 3fr 80px minmax(100px, 20vh);
+  -ms-grid-rows: 70px minmax(100px, 90vh) minmax(500px, 900px) 3fr 80px minmax(100px, 20vh);
+      grid-template-rows: 70px minmax(100px, 90vh) minmax(500px, 900px) 3fr 80px minmax(100px, 20vh);
 }
 
 nav {
@@ -75,15 +76,15 @@ nav a::after, nav .log-in::after {
   position: absolute;
   width: 100%;
   height: 1.5px;
-  background-color: #efbbcf;
+  background-color: #ffd24e;
   bottom: 0;
   left: 0;
   -webkit-transform-origin: left;
           transform-origin: left;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
 }
@@ -98,15 +99,15 @@ nav a::after, nav .log-in::after {
   position: absolute;
   width: 100%;
   height: 1.5px;
-  background-color: #efbbcf;
+  background-color: #ffd24e;
   bottom: 0;
   left: 0;
   -webkit-transform-origin: left;
           transform-origin: left;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
 }
@@ -123,6 +124,7 @@ nav a:hover::after, nav .log-in:hover::after {
       grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
   grid-auto-rows: auto;
   gap: 30px;
+  padding: 0 5px;
   place-items: center;
 }
 
@@ -130,18 +132,20 @@ nav a:hover::after, nav .log-in:hover::after {
   border-radius: 25px;
   display: -ms-grid;
   display: grid;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   place-items: center;
   position: relative;
   color: white;
-  text-shadow: 0 0 3px #142141, 0 0 5px #142141;
+  padding: 0 10px;
+  text-shadow: 0px -6px 0 #212121, 0px -6px 0 #212121, 0px 6px 0 #212121, 0px 6px 0 #212121, -6px 0px 0 #212121, 6px 0px 0 #212121;
   cursor: pointer;
   width: 375px;
   height: 500px;
 }
 
 .showcase .showcase-item .title {
-  position: absolute;
-  top: 10px;
+  display: none;
   font-weight: 500;
 }
 
@@ -165,20 +169,20 @@ nav a:hover::after, nav .log-in:hover::after {
 .showcase .showcase-item:hover .hover-h1 {
   position: absolute;
   display: block;
-  z-index: 8;
+  z-index: 2;
 }
 
 .showcase .item1 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: difference;
+  background-blend-mode: multiply;
   border-radius: 25px;
   background-image: url("../assets/0s.png");
 }
 
 .showcase .item1:hover {
-  background-color: #8675a9;
+  background-color: #2b3838;
 }
 
 .showcase .item1:hover::after {
@@ -201,15 +205,11 @@ nav a:hover::after, nav .log-in:hover::after {
 .showcase .item1::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-image: url("../assets/0u.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: screen;
-  background-blend-mode: screen;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
@@ -221,13 +221,13 @@ nav a:hover::after, nav .log-in:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: difference;
+  background-blend-mode: multiply;
   border-radius: 25px;
   background-image: url("../assets/1s.png");
 }
 
 .showcase .item2:hover {
-  background-color: #8675a9;
+  background-color: #2b3838;
 }
 
 .showcase .item2:hover::after {
@@ -250,15 +250,11 @@ nav a:hover::after, nav .log-in:hover::after {
 .showcase .item2::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-image: url("../assets/1u.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: screen;
-  background-blend-mode: screen;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
@@ -270,13 +266,13 @@ nav a:hover::after, nav .log-in:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: difference;
+  background-blend-mode: multiply;
   border-radius: 25px;
   background-image: url("../assets/2s.png");
 }
 
 .showcase .item3:hover {
-  background-color: #8675a9;
+  background-color: #2b3838;
 }
 
 .showcase .item3:hover::after {
@@ -299,15 +295,11 @@ nav a:hover::after, nav .log-in:hover::after {
 .showcase .item3::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-image: url("../assets/2u.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: screen;
-  background-blend-mode: screen;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
@@ -319,13 +311,13 @@ nav a:hover::after, nav .log-in:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: difference;
+  background-blend-mode: multiply;
   border-radius: 25px;
   background-image: url("../assets/3s.png");
 }
 
 .showcase .item4:hover {
-  background-color: #8675a9;
+  background-color: #2b3838;
 }
 
 .showcase .item4:hover::after {
@@ -348,15 +340,11 @@ nav a:hover::after, nav .log-in:hover::after {
 .showcase .item4::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-image: url("../assets/3u.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: screen;
-  background-blend-mode: screen;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
@@ -368,13 +356,13 @@ nav a:hover::after, nav .log-in:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: difference;
+  background-blend-mode: multiply;
   border-radius: 25px;
   background-image: url("../assets/4s.png");
 }
 
 .showcase .item5:hover {
-  background-color: #8675a9;
+  background-color: #2b3838;
 }
 
 .showcase .item5:hover::after {
@@ -397,15 +385,11 @@ nav a:hover::after, nav .log-in:hover::after {
 .showcase .item5::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-image: url("../assets/4u.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: screen;
-  background-blend-mode: screen;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
@@ -417,13 +401,13 @@ nav a:hover::after, nav .log-in:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: difference;
+  background-blend-mode: multiply;
   border-radius: 25px;
   background-image: url("../assets/5s.png");
 }
 
 .showcase .item6:hover {
-  background-color: #8675a9;
+  background-color: #2b3838;
 }
 
 .showcase .item6:hover::after {
@@ -446,15 +430,11 @@ nav a:hover::after, nav .log-in:hover::after {
 .showcase .item6::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-image: url("../assets/5u.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: screen;
-  background-blend-mode: screen;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
@@ -466,13 +446,13 @@ nav a:hover::after, nav .log-in:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: difference;
+  background-blend-mode: multiply;
   border-radius: 25px;
   background-image: url("../assets/6s.png");
 }
 
 .showcase .item7:hover {
-  background-color: #8675a9;
+  background-color: #2b3838;
 }
 
 .showcase .item7:hover::after {
@@ -495,15 +475,11 @@ nav a:hover::after, nav .log-in:hover::after {
 .showcase .item7::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-image: url("../assets/6u.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: screen;
-  background-blend-mode: screen;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
@@ -515,13 +491,13 @@ nav a:hover::after, nav .log-in:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: difference;
+  background-blend-mode: multiply;
   border-radius: 25px;
   background-image: url("../assets/7s.png");
 }
 
 .showcase .item8:hover {
-  background-color: #8675a9;
+  background-color: #2b3838;
 }
 
 .showcase .item8:hover::after {
@@ -544,15 +520,11 @@ nav a:hover::after, nav .log-in:hover::after {
 .showcase .item8::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-image: url("../assets/7u.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: screen;
-  background-blend-mode: screen;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
@@ -564,13 +536,13 @@ nav a:hover::after, nav .log-in:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: difference;
+  background-blend-mode: multiply;
   border-radius: 25px;
   background-image: url("../assets/8s.png");
 }
 
 .showcase .item9:hover {
-  background-color: #8675a9;
+  background-color: #2b3838;
 }
 
 .showcase .item9:hover::after {
@@ -593,15 +565,11 @@ nav a:hover::after, nav .log-in:hover::after {
 .showcase .item9::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-image: url("../assets/8u.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: screen;
-  background-blend-mode: screen;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
@@ -613,13 +581,13 @@ nav a:hover::after, nav .log-in:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: difference;
+  background-blend-mode: multiply;
   border-radius: 25px;
   background-image: url("../assets/9s.png");
 }
 
 .showcase .item10:hover {
-  background-color: #8675a9;
+  background-color: #2b3838;
 }
 
 .showcase .item10:hover::after {
@@ -642,15 +610,11 @@ nav a:hover::after, nav .log-in:hover::after {
 .showcase .item10::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-image: url("../assets/9u.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: screen;
-  background-blend-mode: screen;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
@@ -662,13 +626,13 @@ nav a:hover::after, nav .log-in:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: difference;
+  background-blend-mode: multiply;
   border-radius: 25px;
   background-image: url("../assets/10s.png");
 }
 
 .showcase .item11:hover {
-  background-color: #8675a9;
+  background-color: #2b3838;
 }
 
 .showcase .item11:hover::after {
@@ -691,15 +655,11 @@ nav a:hover::after, nav .log-in:hover::after {
 .showcase .item11::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-image: url("../assets/10u.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: screen;
-  background-blend-mode: screen;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
@@ -711,13 +671,13 @@ nav a:hover::after, nav .log-in:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: difference;
+  background-blend-mode: multiply;
   border-radius: 25px;
   background-image: url("../assets/11s.png");
 }
 
 .showcase .item12:hover {
-  background-color: #8675a9;
+  background-color: #2b3838;
 }
 
 .showcase .item12:hover::after {
@@ -740,15 +700,11 @@ nav a:hover::after, nav .log-in:hover::after {
 .showcase .item12::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-image: url("../assets/11u.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: screen;
-  background-blend-mode: screen;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
@@ -760,13 +716,13 @@ nav a:hover::after, nav .log-in:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: difference;
+  background-blend-mode: multiply;
   border-radius: 25px;
   background-image: url("../assets/12s.png");
 }
 
 .showcase .item13:hover {
-  background-color: #8675a9;
+  background-color: #2b3838;
 }
 
 .showcase .item13:hover::after {
@@ -789,15 +745,11 @@ nav a:hover::after, nav .log-in:hover::after {
 .showcase .item13::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-image: url("../assets/12u.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: screen;
-  background-blend-mode: screen;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
@@ -809,13 +761,13 @@ nav a:hover::after, nav .log-in:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: difference;
+  background-blend-mode: multiply;
   border-radius: 25px;
   background-image: url("../assets/13s.png");
 }
 
 .showcase .item14:hover {
-  background-color: #8675a9;
+  background-color: #2b3838;
 }
 
 .showcase .item14:hover::after {
@@ -838,15 +790,11 @@ nav a:hover::after, nav .log-in:hover::after {
 .showcase .item14::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-image: url("../assets/13u.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: screen;
-  background-blend-mode: screen;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
@@ -858,13 +806,13 @@ nav a:hover::after, nav .log-in:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: difference;
+  background-blend-mode: multiply;
   border-radius: 25px;
   background-image: url("../assets/14s.png");
 }
 
 .showcase .item15:hover {
-  background-color: #8675a9;
+  background-color: #2b3838;
 }
 
 .showcase .item15:hover::after {
@@ -887,15 +835,11 @@ nav a:hover::after, nav .log-in:hover::after {
 .showcase .item15::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-image: url("../assets/14u.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: screen;
-  background-blend-mode: screen;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
@@ -907,13 +851,13 @@ nav a:hover::after, nav .log-in:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: difference;
+  background-blend-mode: multiply;
   border-radius: 25px;
   background-image: url("../assets/15s.png");
 }
 
 .showcase .item16:hover {
-  background-color: #8675a9;
+  background-color: #2b3838;
 }
 
 .showcase .item16:hover::after {
@@ -936,15 +880,11 @@ nav a:hover::after, nav .log-in:hover::after {
 .showcase .item16::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-image: url("../assets/15u.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: screen;
-  background-blend-mode: screen;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
@@ -956,13 +896,13 @@ nav a:hover::after, nav .log-in:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: difference;
+  background-blend-mode: multiply;
   border-radius: 25px;
   background-image: url("../assets/16s.png");
 }
 
 .showcase .item17:hover {
-  background-color: #8675a9;
+  background-color: #2b3838;
 }
 
 .showcase .item17:hover::after {
@@ -985,15 +925,11 @@ nav a:hover::after, nav .log-in:hover::after {
 .showcase .item17::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-image: url("../assets/16u.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: screen;
-  background-blend-mode: screen;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
@@ -1005,13 +941,13 @@ nav a:hover::after, nav .log-in:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: difference;
+  background-blend-mode: multiply;
   border-radius: 25px;
   background-image: url("../assets/17s.png");
 }
 
 .showcase .item18:hover {
-  background-color: #8675a9;
+  background-color: #2b3838;
 }
 
 .showcase .item18:hover::after {
@@ -1034,15 +970,11 @@ nav a:hover::after, nav .log-in:hover::after {
 .showcase .item18::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-image: url("../assets/17u.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: screen;
-  background-blend-mode: screen;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
@@ -1054,13 +986,13 @@ nav a:hover::after, nav .log-in:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: difference;
+  background-blend-mode: multiply;
   border-radius: 25px;
   background-image: url("../assets/18s.png");
 }
 
 .showcase .item19:hover {
-  background-color: #8675a9;
+  background-color: #2b3838;
 }
 
 .showcase .item19:hover::after {
@@ -1083,15 +1015,11 @@ nav a:hover::after, nav .log-in:hover::after {
 .showcase .item19::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-image: url("../assets/18u.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: screen;
-  background-blend-mode: screen;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
@@ -1103,13 +1031,13 @@ nav a:hover::after, nav .log-in:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: difference;
+  background-blend-mode: multiply;
   border-radius: 25px;
   background-image: url("../assets/19s.png");
 }
 
 .showcase .item20:hover {
-  background-color: #8675a9;
+  background-color: #2b3838;
 }
 
 .showcase .item20:hover::after {
@@ -1132,15 +1060,11 @@ nav a:hover::after, nav .log-in:hover::after {
 .showcase .item20::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-image: url("../assets/19u.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: screen;
-  background-blend-mode: screen;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
@@ -1152,13 +1076,13 @@ nav a:hover::after, nav .log-in:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: difference;
+  background-blend-mode: multiply;
   border-radius: 25px;
   background-image: url("../assets/20s.png");
 }
 
 .showcase .item21:hover {
-  background-color: #8675a9;
+  background-color: #2b3838;
 }
 
 .showcase .item21:hover::after {
@@ -1181,15 +1105,11 @@ nav a:hover::after, nav .log-in:hover::after {
 .showcase .item21::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-image: url("../assets/20u.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: screen;
-  background-blend-mode: screen;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
@@ -1201,13 +1121,13 @@ nav a:hover::after, nav .log-in:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: difference;
+  background-blend-mode: multiply;
   border-radius: 25px;
   background-image: url("../assets/21s.png");
 }
 
 .showcase .item22:hover {
-  background-color: #8675a9;
+  background-color: #2b3838;
 }
 
 .showcase .item22:hover::after {
@@ -1230,15 +1150,11 @@ nav a:hover::after, nav .log-in:hover::after {
 .showcase .item22::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-image: url("../assets/21u.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode: screen;
-  background-blend-mode: screen;
   background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 0.3s linear;
@@ -1266,12 +1182,12 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #8675a9;
-  background: #efbbcf;
+  color: #2b3838;
+  background: #ffd24e;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   border-bottom: 1px dotted transparent;
 }
 
@@ -1292,11 +1208,10 @@ nav .nav-lists {
           align-items: center;
   list-style: none;
   width: 500px;
-  margin-left: 49px;
 }
 
 nav .nav-lists .nav-items a {
-  color: #8675a9;
+  color: #2b3838;
   text-decoration: none;
   font-weight: 400;
   position: relative;
@@ -1322,28 +1237,28 @@ nav .account .log-in {
 }
 
 nav .account .sign-up {
-  border: 2px solid #8675a9;
+  border: 2px solid #2b3838;
   border-radius: 15px;
   padding: 0.3em 0.6em;
   cursor: pointer;
 }
 
 nav .account .sign-up:hover {
-  background-color: #efbbcf;
-  color: #8675a9;
+  background-color: #ffd24e;
+  color: #2b3838;
 }
 
 nav:hover {
-  background-color: #8675a9 !important;
-  color: #efbbcf;
+  background-color: #2b3838 !important;
+  color: #ffd24e;
 }
 
 nav:hover .nav-items a {
-  color: #efbbcf;
+  color: #ffd24e;
 }
 
 nav:hover .sign-up {
-  border-color: #efbbcf;
+  border-color: #ffd24e;
 }
 
 /* ===HERO=== */
@@ -1351,7 +1266,7 @@ nav:hover .sign-up {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  color: #8675a9;
+  color: #2b3838;
 }
 
 .hero .hero-content {
@@ -1375,7 +1290,15 @@ nav:hover .sign-up {
 }
 
 .hero .hero-content .cta a {
-  color: #8675a9;
+  color: #2b3838;
+}
+
+.hero .hero-content .dog {
+  position: absolute;
+  left: 5px;
+  width: 200px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 /* ===VIDEO=== */
@@ -1385,14 +1308,15 @@ nav:hover .sign-up {
   place-items: center;
 }
 
-.video video {
+.video img {
   width: 100%;
   max-width: 900px;
   height: auto;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, #333333 0px 0px 0px 3px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, #333333 0px 0px 0px 3px;
 }
 
 .video .video-text {
-  padding: 1rem 0;
   text-align: center;
 }
 
@@ -1409,25 +1333,40 @@ nav:hover .sign-up {
    showcase partials
    ================= */
 /* ===DOWNLOAD=== */
+.download {
+  padding-top: 20px;
+}
+
 .download .cta-dl {
-  border: 2px solid #8675a9;
+  border: 2px solid #2b3838;
   border-radius: 15px;
   padding: 0.3em 0.6em;
   cursor: pointer;
-  color: #8675a9;
+  color: #2b3838;
   margin: 20px auto;
   text-align: center;
   width: 200px;
 }
 
 .download .cta-dl:hover {
-  background-color: #8675a9;
-  color: #efbbcf;
-  border-color: #efbbcf;
+  background-color: #2b3838;
+  color: #ffd24e;
+  border-color: #ffd24e;
 }
 
 /* ===FOOTER=== */
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 1rem;
+  position: relative;
   text-align: center;
 }
 
@@ -1441,7 +1380,7 @@ label,
 @media screen and (max-width: 860px) {
   nav {
     background-color: #142141 !important;
-    color: #efbbcf;
+    color: #ffd24e;
   }
   nav label {
     display: inline-block;
@@ -1476,7 +1415,7 @@ label,
     display: none;
   }
   nav .nav-lists .nav-items a {
-    color: #efbbcf;
+    color: #ffd24e;
     margin: 10px 0;
   }
   nav:hover {
@@ -1489,6 +1428,10 @@ label,
   }
   .video-title {
     font-size: 2.3rem !important;
+  }
+  .hero .hero-content .dog {
+    position: relative;
+    width: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,41 +5,43 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-blend-mode: difference;
+	background-blend-mode: multiply;
 	border-radius: 25px;
 	&:hover {
 		// background-image: none;
 		background-color: $primary-color;
 	}
 	&:hover::after {
-		@include winner2(
-			"Mayuka Itou, original designs by Iro Aida — Toilet-Bound Hanako-kun"
-		);
+		@include userHover();
 	}
 }
 .showcase {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
 	grid-auto-rows: auto;
-	// padding: 0 1rem;
 	gap: 30px;
-
+	padding: 0 5px;
 	place-items: center;
 	.showcase-item {
 		border-radius: 25px;
 		display: grid;
-
+		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+			rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+			rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 		place-items: center;
 		position: relative;
 		color: white;
-		text-shadow: 0 0 3px #142141, 0 0 5px #142141;
-		cursor: pointer;
+		padding: 0 10px;
+		text-shadow: 0px -6px 0 #212121, 0px -6px 0 #212121, 0px 6px 0 #212121,
+			0px 6px 0 #212121, -6px 0px 0 #212121, 6px 0px 0 #212121;
 
+		cursor: pointer;
 		width: 375px;
 		height: 500px;
 		.title {
-			position: absolute;
-			top: 10px;
+			// position: absolute;
+			// top: 10px;
+			display: none;
 			font-weight: map-get($font-weights, medium);
 		}
 		.showcase-h1 {
@@ -49,7 +51,6 @@
 			display: none;
 			text-align: center;
 		}
-
 		&:hover {
 			.title {
 				display: none;
@@ -61,7 +62,7 @@
 				position: absolute;
 
 				display: block;
-				z-index: 8;
+				z-index: 2;
 			}
 		}
 	}
@@ -69,154 +70,154 @@
 		@include card();
 		background-image: url("../assets/0s.png");
 		&::after {
-			@include winner1("0u");
+			@include user("0u");
 		}
 	}
 	.item2 {
 		@include card();
 		background-image: url("../assets/1s.png");
 		&::after {
-			@include winner1("1u");
+			@include user("1u");
 		}
 	}
 	.item3 {
 		@include card();
 		background-image: url("../assets/2s.png");
 		&::after {
-			@include winner1("2u");
+			@include user("2u");
 		}
 	}
 	.item4 {
 		@include card();
 		background-image: url("../assets/3s.png");
 		&::after {
-			@include winner1("3u");
+			@include user("3u");
 		}
 	}
 	.item5 {
 		@include card();
 		background-image: url("../assets/4s.png");
 		&::after {
-			@include winner1("4u");
+			@include user("4u");
 		}
 	}
 	.item6 {
 		@include card();
 		background-image: url("../assets/5s.png");
 		&::after {
-			@include winner1("5u");
+			@include user("5u");
 		}
 	}
 	.item7 {
 		@include card();
 		background-image: url("../assets/6s.png");
 		&::after {
-			@include winner1("6u");
+			@include user("6u");
 		}
 	}
 	.item8 {
 		@include card();
 		background-image: url("../assets/7s.png");
 		&::after {
-			@include winner1("7u");
+			@include user("7u");
 		}
 	}
 	.item9 {
 		@include card();
 		background-image: url("../assets/8s.png");
 		&::after {
-			@include winner1("8u");
+			@include user("8u");
 		}
 	}
 	.item10 {
 		@include card();
 		background-image: url("../assets/9s.png");
 		&::after {
-			@include winner1("9u");
+			@include user("9u");
 		}
 	}
 	.item11 {
 		@include card();
 		background-image: url("../assets/10s.png");
 		&::after {
-			@include winner1("10u");
+			@include user("10u");
 		}
 	}
 	.item12 {
 		@include card();
 		background-image: url("../assets/11s.png");
 		&::after {
-			@include winner1("11u");
+			@include user("11u");
 		}
 	}
 	.item13 {
 		@include card();
 		background-image: url("../assets/12s.png");
 		&::after {
-			@include winner1("12u");
+			@include user("12u");
 		}
 	}
 	.item14 {
 		@include card();
 		background-image: url("../assets/13s.png");
 		&::after {
-			@include winner1("13u");
+			@include user("13u");
 		}
 	}
 	.item15 {
 		@include card();
 		background-image: url("../assets/14s.png");
 		&::after {
-			@include winner1("14u");
+			@include user("14u");
 		}
 	}
 	.item16 {
 		@include card();
 		background-image: url("../assets/15s.png");
 		&::after {
-			@include winner1("15u");
+			@include user("15u");
 		}
 	}
 	.item17 {
 		@include card();
 		background-image: url("../assets/16s.png");
 		&::after {
-			@include winner1("16u");
+			@include user("16u");
 		}
 	}
 	.item18 {
 		@include card();
 		background-image: url("../assets/17s.png");
 		&::after {
-			@include winner1("17u");
+			@include user("17u");
 		}
 	}
 	.item19 {
 		@include card();
 		background-image: url("../assets/18s.png");
 		&::after {
-			@include winner1("18u");
+			@include user("18u");
 		}
 	}
 	.item20 {
 		@include card();
 		background-image: url("../assets/19s.png");
 		&::after {
-			@include winner1("19u");
+			@include user("19u");
 		}
 	}
 	.item21 {
 		@include card();
 		background-image: url("../assets/20s.png");
 		&::after {
-			@include winner1("20u");
+			@include user("20u");
 		}
 	}
 	.item22 {
 		@include card();
 		background-image: url("../assets/21s.png");
 		&::after {
-			@include winner1("21u");
+			@include user("21u");
 		}
 	}
 }

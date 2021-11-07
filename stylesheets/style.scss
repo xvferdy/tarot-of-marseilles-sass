@@ -33,7 +33,7 @@ nav {
 	background: $secondary-color;
 	position: sticky;
 	top: 0;
-	z-index: 2;
+	z-index: 3;
 	border-bottom: 1px dotted transparent;
 	.brand {
 		margin-left: 20px;
@@ -43,7 +43,7 @@ nav {
 		@include flexbox();
 		list-style: none;
 		width: 500px;
-		margin-left: 49px; //mata
+
 		.nav-items {
 			a {
 				color: $primary-color;
@@ -106,6 +106,12 @@ nav {
 				color: $primary-color;
 			}
 		}
+		.dog {
+			position: absolute;
+			left: 5px;
+			width: 200px;
+			transform: scaleX(-1);
+		}
 	}
 }
 
@@ -113,13 +119,19 @@ nav {
 .video {
 	display: grid;
 	place-items: center;
-	video {
+	// video {
+	// 	width: 100%;
+	// 	max-width: 900px;
+	// 	height: auto;
+	// }
+	img {
 		width: 100%;
 		max-width: 900px;
 		height: auto;
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 	}
 	.video-text {
-		padding: 1rem 0;
+		// padding: 1rem 0;
 		text-align: center;
 
 		.video-sub-title {
@@ -138,6 +150,7 @@ nav {
 
 /* ===DOWNLOAD=== */
 .download {
+	padding-top: 20px;
 	.cta-dl {
 		@include cta();
 		color: $primary-color;
@@ -154,6 +167,12 @@ nav {
 
 /* ===FOOTER=== */
 footer {
+	display: flex;
+
+	justify-content: center;
+	align-items: flex-end;
+	padding: 1rem;
+	position: relative;
 	text-align: center;
 }
 
@@ -164,6 +183,7 @@ label,
 	cursor: pointer;
 }
 @media screen and (max-width: 860px) {
+	// nav
 	nav {
 		background-color: #142141 !important;
 		color: $secondary-color;
@@ -190,7 +210,6 @@ label,
 			text-transform: uppercase;
 			height: auto;
 			padding: 0 1em;
-
 			.nav-items {
 				display: none;
 				a {
@@ -207,7 +226,18 @@ label,
 		display: flex;
 	}
 
+	// video
 	.video-title {
 		font-size: 2.3rem !important;
+	}
+
+	// hero
+	.hero {
+		.hero-content {
+			.dog {
+				position: relative;
+				width: 50px;
+			}
+		}
 	}
 }
