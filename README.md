@@ -5,30 +5,24 @@
 ## :round_pushpin:Table of Contents
 - [About The Project](#about-the-project)
 - [Technologies](#technologies)
-- [Live](#live)
 - [Acknowledgments](#acknowledgments)
-- 
+
 ## About the Project
-Static website with yugioh theme. What I learn ➤ HTML & CSS from scratch.
+Static website to show tarot card from JoJo's Bizarre Adventure. This time I learn new technologies ➤ [CSS preprocessor](https://developer.mozilla.org/en-US/docs/Glossary/CSS_preprocessor).
 
 **Overview** 🌈
 <p align="">
   <img src="./assets/overview.png">
 </p>
+
+**Demo**
+https://xvferdy.github.io/tarot-of-marseilles-sass/
 
 ## Technologies
 - Sass
 
 ## Acknowledgments
-- Download [this](https://github.com/xvferdy/simple-static-website/archive/refs/heads/main.zip "Dowload Repo") repo
-- Open `index.html`
+- [jojowiki.com](https://jojowiki.com/Tarot_Cards) Jojo fandom
+- [Flexbox](https://flexbox.malven.co/) - Malven's Flexbox Cheatsheet
+- [Grid](https://grid.malven.co/) -Malven's Grid Cheatsheet
 
-## Live
-https://xvferdy.github.io/simple-static-website/
-**Overview** 🌈
-<p align="">
-  <img src="./assets/overview.png">
-</p>
-<p align="">
-  <img src="./assets/overview2.png">
-</p>
