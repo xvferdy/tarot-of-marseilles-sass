@@ -68,156 +68,156 @@
 	}
 	.item1 {
 		@include card();
-		background-image: url("../assets/0s.png");
+		background-image: url("../assets/min/0s-min.png");
 		&::after {
-			@include user("0u");
+			@include user("0u-min");
 		}
 	}
 	.item2 {
 		@include card();
-		background-image: url("../assets/1s.png");
+		background-image: url("../assets/min/1s-min.png");
 		&::after {
-			@include user("1u");
+			@include user("1u-min");
 		}
 	}
 	.item3 {
 		@include card();
-		background-image: url("../assets/2s.png");
+		background-image: url("../assets/min/2s-min.png");
 		&::after {
-			@include user("2u");
+			@include user("2u-min");
 		}
 	}
 	.item4 {
 		@include card();
-		background-image: url("../assets/3s.png");
+		background-image: url("../assets/min/3s-min.png");
 		&::after {
-			@include user("3u");
+			@include user("3u-min");
 		}
 	}
 	.item5 {
 		@include card();
-		background-image: url("../assets/4s.png");
+		background-image: url("../assets/min/4s-min.png");
 		&::after {
-			@include user("4u");
+			@include user("4u-min");
 		}
 	}
 	.item6 {
 		@include card();
-		background-image: url("../assets/5s.png");
+		background-image: url("../assets/min/5s-min.png");
 		&::after {
-			@include user("5u");
+			@include user("5u-min");
 		}
 	}
 	.item7 {
 		@include card();
-		background-image: url("../assets/6s.png");
+		background-image: url("../assets/min/6s-min.png");
 		&::after {
-			@include user("6u");
+			@include user("6u-min");
 		}
 	}
 	.item8 {
 		@include card();
-		background-image: url("../assets/7s.png");
+		background-image: url("../assets/min/7s-min.png");
 		&::after {
-			@include user("7u");
+			@include user("7u-min");
 		}
 	}
 	.item9 {
 		@include card();
-		background-image: url("../assets/8s.png");
+		background-image: url("../assets/min/8s-min.png");
 		&::after {
-			@include user("8u");
+			@include user("8u-min");
 		}
 	}
 	.item10 {
 		@include card();
-		background-image: url("../assets/9s.png");
+		background-image: url("../assets/min/9s-min.png");
 		&::after {
-			@include user("9u");
+			@include user("9u-min");
 		}
 	}
 	.item11 {
 		@include card();
-		background-image: url("../assets/10s.png");
+		background-image: url("../assets/min/10s-min.png");
 		&::after {
-			@include user("10u");
+			@include user("10u-min");
 		}
 	}
 	.item12 {
 		@include card();
-		background-image: url("../assets/11s.png");
+		background-image: url("../assets/min/11s-min.png");
 		&::after {
-			@include user("11u");
+			@include user("11u-min");
 		}
 	}
 	.item13 {
 		@include card();
-		background-image: url("../assets/12s.png");
+		background-image: url("../assets/min/12s-min.png");
 		&::after {
-			@include user("12u");
+			@include user("12u-min");
 		}
 	}
 	.item14 {
 		@include card();
-		background-image: url("../assets/13s.png");
+		background-image: url("../assets/min/13s-min.png");
 		&::after {
-			@include user("13u");
+			@include user("13u-min");
 		}
 	}
 	.item15 {
 		@include card();
-		background-image: url("../assets/14s.png");
+		background-image: url("../assets/min/14s-min.png");
 		&::after {
-			@include user("14u");
+			@include user("14u-min");
 		}
 	}
 	.item16 {
 		@include card();
-		background-image: url("../assets/15s.png");
+		background-image: url("../assets/min/15s-min.png");
 		&::after {
-			@include user("15u");
+			@include user("15u-min");
 		}
 	}
 	.item17 {
 		@include card();
-		background-image: url("../assets/16s.png");
+		background-image: url("../assets/min/16s-min.png");
 		&::after {
-			@include user("16u");
+			@include user("16u-min");
 		}
 	}
 	.item18 {
 		@include card();
-		background-image: url("../assets/17s.png");
+		background-image: url("../assets/min/17s-min.png");
 		&::after {
-			@include user("17u");
+			@include user("17u-min");
 		}
 	}
 	.item19 {
 		@include card();
-		background-image: url("../assets/18s.png");
+		background-image: url("../assets/min/18s-min.png");
 		&::after {
-			@include user("18u");
+			@include user("18u-min");
 		}
 	}
 	.item20 {
 		@include card();
-		background-image: url("../assets/19s.png");
+		background-image: url("../assets/min/19s-min.png");
 		&::after {
-			@include user("19u");
+			@include user("19u-min");
 		}
 	}
 	.item21 {
 		@include card();
-		background-image: url("../assets/20s.png");
+		background-image: url("../assets/min/20s-min.png");
 		&::after {
-			@include user("20u");
+			@include user("20u-min");
 		}
 	}
 	.item22 {
 		@include card();
-		background-image: url("../assets/21s.png");
+		background-image: url("../assets/min/21s-min.png");
 		&::after {
-			@include user("21u");
+			@include user("21u-min");
 		}
 	}
 }

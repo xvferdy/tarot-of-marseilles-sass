@@ -177,7 +177,7 @@ nav a:hover::after, nav .log-in:hover::after {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   border-radius: 25px;
-  background-image: url("../assets/0s.png");
+  background-image: url("../assets/min/0s-min.png");
 }
 
 .showcase .item1:hover {
@@ -206,7 +206,7 @@ nav a:hover::after, nav .log-in:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/0u.png");
+  background-image: url("../assets/min/0u-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -222,7 +222,7 @@ nav a:hover::after, nav .log-in:hover::after {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   border-radius: 25px;
-  background-image: url("../assets/1s.png");
+  background-image: url("../assets/min/1s-min.png");
 }
 
 .showcase .item2:hover {
@@ -251,7 +251,7 @@ nav a:hover::after, nav .log-in:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/1u.png");
+  background-image: url("../assets/min/1u-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -267,7 +267,7 @@ nav a:hover::after, nav .log-in:hover::after {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   border-radius: 25px;
-  background-image: url("../assets/2s.png");
+  background-image: url("../assets/min/2s-min.png");
 }
 
 .showcase .item3:hover {
@@ -296,7 +296,7 @@ nav a:hover::after, nav .log-in:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/2u.png");
+  background-image: url("../assets/min/2u-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -312,7 +312,7 @@ nav a:hover::after, nav .log-in:hover::after {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   border-radius: 25px;
-  background-image: url("../assets/3s.png");
+  background-image: url("../assets/min/3s-min.png");
 }
 
 .showcase .item4:hover {
@@ -341,7 +341,7 @@ nav a:hover::after, nav .log-in:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/3u.png");
+  background-image: url("../assets/min/3u-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -357,7 +357,7 @@ nav a:hover::after, nav .log-in:hover::after {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   border-radius: 25px;
-  background-image: url("../assets/4s.png");
+  background-image: url("../assets/min/4s-min.png");
 }
 
 .showcase .item5:hover {
@@ -386,7 +386,7 @@ nav a:hover::after, nav .log-in:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/4u.png");
+  background-image: url("../assets/min/4u-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -402,7 +402,7 @@ nav a:hover::after, nav .log-in:hover::after {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   border-radius: 25px;
-  background-image: url("../assets/5s.png");
+  background-image: url("../assets/min/5s-min.png");
 }
 
 .showcase .item6:hover {
@@ -431,7 +431,7 @@ nav a:hover::after, nav .log-in:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/5u.png");
+  background-image: url("../assets/min/5u-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -447,7 +447,7 @@ nav a:hover::after, nav .log-in:hover::after {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   border-radius: 25px;
-  background-image: url("../assets/6s.png");
+  background-image: url("../assets/min/6s-min.png");
 }
 
 .showcase .item7:hover {
@@ -476,7 +476,7 @@ nav a:hover::after, nav .log-in:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/6u.png");
+  background-image: url("../assets/min/6u-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -492,7 +492,7 @@ nav a:hover::after, nav .log-in:hover::after {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   border-radius: 25px;
-  background-image: url("../assets/7s.png");
+  background-image: url("../assets/min/7s-min.png");
 }
 
 .showcase .item8:hover {
@@ -521,7 +521,7 @@ nav a:hover::after, nav .log-in:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/7u.png");
+  background-image: url("../assets/min/7u-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -537,7 +537,7 @@ nav a:hover::after, nav .log-in:hover::after {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   border-radius: 25px;
-  background-image: url("../assets/8s.png");
+  background-image: url("../assets/min/8s-min.png");
 }
 
 .showcase .item9:hover {
@@ -566,7 +566,7 @@ nav a:hover::after, nav .log-in:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/8u.png");
+  background-image: url("../assets/min/8u-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -582,7 +582,7 @@ nav a:hover::after, nav .log-in:hover::after {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   border-radius: 25px;
-  background-image: url("../assets/9s.png");
+  background-image: url("../assets/min/9s-min.png");
 }
 
 .showcase .item10:hover {
@@ -611,7 +611,7 @@ nav a:hover::after, nav .log-in:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/9u.png");
+  background-image: url("../assets/min/9u-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -627,7 +627,7 @@ nav a:hover::after, nav .log-in:hover::after {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   border-radius: 25px;
-  background-image: url("../assets/10s.png");
+  background-image: url("../assets/min/10s-min.png");
 }
 
 .showcase .item11:hover {
@@ -656,7 +656,7 @@ nav a:hover::after, nav .log-in:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/10u.png");
+  background-image: url("../assets/min/10u-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -672,7 +672,7 @@ nav a:hover::after, nav .log-in:hover::after {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   border-radius: 25px;
-  background-image: url("../assets/11s.png");
+  background-image: url("../assets/min/11s-min.png");
 }
 
 .showcase .item12:hover {
@@ -701,7 +701,7 @@ nav a:hover::after, nav .log-in:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/11u.png");
+  background-image: url("../assets/min/11u-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -717,7 +717,7 @@ nav a:hover::after, nav .log-in:hover::after {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   border-radius: 25px;
-  background-image: url("../assets/12s.png");
+  background-image: url("../assets/min/12s-min.png");
 }
 
 .showcase .item13:hover {
@@ -746,7 +746,7 @@ nav a:hover::after, nav .log-in:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/12u.png");
+  background-image: url("../assets/min/12u-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -762,7 +762,7 @@ nav a:hover::after, nav .log-in:hover::after {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   border-radius: 25px;
-  background-image: url("../assets/13s.png");
+  background-image: url("../assets/min/13s-min.png");
 }
 
 .showcase .item14:hover {
@@ -791,7 +791,7 @@ nav a:hover::after, nav .log-in:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/13u.png");
+  background-image: url("../assets/min/13u-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -807,7 +807,7 @@ nav a:hover::after, nav .log-in:hover::after {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   border-radius: 25px;
-  background-image: url("../assets/14s.png");
+  background-image: url("../assets/min/14s-min.png");
 }
 
 .showcase .item15:hover {
@@ -836,7 +836,7 @@ nav a:hover::after, nav .log-in:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/14u.png");
+  background-image: url("../assets/min/14u-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -852,7 +852,7 @@ nav a:hover::after, nav .log-in:hover::after {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   border-radius: 25px;
-  background-image: url("../assets/15s.png");
+  background-image: url("../assets/min/15s-min.png");
 }
 
 .showcase .item16:hover {
@@ -881,7 +881,7 @@ nav a:hover::after, nav .log-in:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/15u.png");
+  background-image: url("../assets/min/15u-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -897,7 +897,7 @@ nav a:hover::after, nav .log-in:hover::after {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   border-radius: 25px;
-  background-image: url("../assets/16s.png");
+  background-image: url("../assets/min/16s-min.png");
 }
 
 .showcase .item17:hover {
@@ -926,7 +926,7 @@ nav a:hover::after, nav .log-in:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/16u.png");
+  background-image: url("../assets/min/16u-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -942,7 +942,7 @@ nav a:hover::after, nav .log-in:hover::after {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   border-radius: 25px;
-  background-image: url("../assets/17s.png");
+  background-image: url("../assets/min/17s-min.png");
 }
 
 .showcase .item18:hover {
@@ -971,7 +971,7 @@ nav a:hover::after, nav .log-in:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/17u.png");
+  background-image: url("../assets/min/17u-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -987,7 +987,7 @@ nav a:hover::after, nav .log-in:hover::after {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   border-radius: 25px;
-  background-image: url("../assets/18s.png");
+  background-image: url("../assets/min/18s-min.png");
 }
 
 .showcase .item19:hover {
@@ -1016,7 +1016,7 @@ nav a:hover::after, nav .log-in:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/18u.png");
+  background-image: url("../assets/min/18u-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1032,7 +1032,7 @@ nav a:hover::after, nav .log-in:hover::after {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   border-radius: 25px;
-  background-image: url("../assets/19s.png");
+  background-image: url("../assets/min/19s-min.png");
 }
 
 .showcase .item20:hover {
@@ -1061,7 +1061,7 @@ nav a:hover::after, nav .log-in:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/19u.png");
+  background-image: url("../assets/min/19u-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1077,7 +1077,7 @@ nav a:hover::after, nav .log-in:hover::after {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   border-radius: 25px;
-  background-image: url("../assets/20s.png");
+  background-image: url("../assets/min/20s-min.png");
 }
 
 .showcase .item21:hover {
@@ -1106,7 +1106,7 @@ nav a:hover::after, nav .log-in:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/20u.png");
+  background-image: url("../assets/min/20u-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1122,7 +1122,7 @@ nav a:hover::after, nav .log-in:hover::after {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   border-radius: 25px;
-  background-image: url("../assets/21s.png");
+  background-image: url("../assets/min/21s-min.png");
 }
 
 .showcase .item22:hover {
@@ -1151,7 +1151,7 @@ nav a:hover::after, nav .log-in:hover::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/21u.png");
+  background-image: url("../assets/min/21u-min.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
