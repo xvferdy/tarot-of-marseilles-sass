@@ -4,12 +4,27 @@
 
 ## :round_pushpin:Table of Contents
 - [About The Project](#about-the-project)
-    - [Live](#live-httpssimple-chat-app-xvferdynetlifyapp)
-    - [Built with](#built-with)   
-- [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
+- [Technologies](#technologies)
+- [Live](#live)
+- [Acknowledgments](#acknowledgments)
+- 
+## About the Project
+Static website with yugioh theme. What I learn ➤ HTML & CSS from scratch.
 
+**Overview** 🌈
+<p align="">
+  <img src="./assets/overview.png">
+</p>
+
+## Technologies
+- Sass
+
+## Acknowledgments
+- Download [this](https://github.com/xvferdy/simple-static-website/archive/refs/heads/main.zip "Dowload Repo") repo
+- Open `index.html`
+
+## Live
+https://xvferdy.github.io/simple-static-website/
 **Overview** 🌈
 <p align="">
   <img src="./assets/overview.png">
