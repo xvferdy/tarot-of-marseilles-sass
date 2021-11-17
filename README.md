@@ -19,12 +19,13 @@ Static website to show tarot card from JoJo's Bizarre Adventure. This time I lea
 https://xvferdy.github.io/tarot-of-marseilles-sass/
 
 ## 👀 Technologies
-- [Sass](https://sass-lang.com/ "Sass")
+- [Ruby Sass ⚰️](https://sass-lang.com/ruby-sass "Sass")
 
 ## 👏 Acknowledgments
-- [jojowiki.com](https://jojowiki.com/Tarot_Cards) Jojo fandom
+- [jojowiki.com](https://jojowiki.com/Tarot_Cards) - Jojo fandom
 - [Flexbox](https://flexbox.malven.co/) - Malven's Flexbox Cheatsheet
-- [Grid](https://grid.malven.co/) -Malven's Grid Cheatsheet
+- [Grid](https://grid.malven.co/) - Malven's Grid Cheatsheet
+- [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) - Sass Compiler
 
 <h3 align="right">
       <a href="#tarot-of-marseilles-sass">To Top ⤴️</a>
