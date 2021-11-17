@@ -7,10 +7,10 @@
 - [Technologies](#technologies)
 - [Acknowledgments](#acknowledgments)
 
-## About the Project
+## 🌍 About the Project
 Static website to show tarot card from JoJo's Bizarre Adventure. This time I learn new technologies ➤ [CSS preprocessor](https://developer.mozilla.org/en-US/docs/Glossary/CSS_preprocessor).
 
-**Overview** 🌈
+**Overview** 🔭
 <p align="">
   <img src="./assets/overview.png">
 </p>
@@ -18,14 +18,14 @@ Static website to show tarot card from JoJo's Bizarre Adventure. This time I lea
 **Demo**
 https://xvferdy.github.io/tarot-of-marseilles-sass/
 
-## Technologies
+## 👷‍♀️ Technologies
 - Sass
 
-## Acknowledgments
+## 👏 Acknowledgments
 - [jojowiki.com](https://jojowiki.com/Tarot_Cards) Jojo fandom
 - [Flexbox](https://flexbox.malven.co/) - Malven's Flexbox Cheatsheet
 - [Grid](https://grid.malven.co/) -Malven's Grid Cheatsheet
 
 <h3 align="right">
-      <a href="#round_pushpintable-of-contents">To Top</a>
+      <a href="#tarot-of-marseilles-sass">To Top</a>
 </h3>
