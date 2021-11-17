@@ -27,5 +27,5 @@ https://xvferdy.github.io/tarot-of-marseilles-sass/
 - [Grid](https://grid.malven.co/) -Malven's Grid Cheatsheet
 
 <h3 align="right">
-      <a href="#tarot-of-marseilles-sass">To Top</a>
+      <a href="#tarot-of-marseilles-sass">To Top ⤴️</a>
 </h3>
